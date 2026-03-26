@@ -4,8 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <p>hello</p>
+    <header class="w-full flex items-center justify-between px-6 md:px-12 py-3 bg-white shadow-sm">
+  <div class="flex items-center gap-2">
+    <div class="w-[32px] h-[32px] rounded-full bg-gradient-to-br from-[#00c896] to-[#2196f3] flex items-center justify-center flex-shrink-0">
+      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
+      </svg>
+    </div>
+    <span class="text-[18px] font-bold text-[#1a1a2e]">OkeyPost</span>
+  </div>
+
+  <nav class="hidden lg:flex items-center gap-6 text-[13.5px] text-[#444]">
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Как покупать</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Распродажи</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Цены</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Помощь</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Бонусы</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Блог</a>
+    <a href="#" class="hover:text-[#2196f3] transition-colors">Магазины</a>
+  </nav>
+
+  <div class="flex items-center gap-3">
+    <a href="#" class="hidden md:flex items-center gap-1.5 text-[13.5px] text-[#444] hover:text-[#2196f3] transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+      </svg>
+      Вход
+    </a>
+    <a href="#" class="flex items-center justify-center px-5 py-2 bg-[#00c896] text-white text-[13px] font-semibold rounded-full hover:bg-[#00b080] transition-colors whitespace-nowrap">
+      Связаться с нами
+    </a>
+    <label for="mob-okeypost" class="flex lg:hidden cursor-pointer p-1">
+      <svg class="w-5 h-5 text-[#444]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </label>
+  </div>
+</header>
+
+<input type="checkbox" id="mob-okeypost" class="hidden peer"/>
+<div class="hidden peer-checked:flex flex-col lg:hidden bg-white border-b border-gray-100 px-6 py-4 gap-3 text-[14px] text-[#444]">
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Как покупать</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Распродажи</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Цены</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Помощь</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Бонусы</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Блог</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#2196f3]">Магазины</a>
+  <a href="#" class="py-2 text-[#2196f3] font-semibold">Вход</a>
+</div>
+
+<section class="px-4 sm:px-6 md:px-10 py-6">
+  <div class="max-w-6xl mx-auto rounded-2xl overflow-hidden relative" style="background: linear-gradient(135deg, #6b3fa0 0%, #3b82f6 50%, #38bdf8 100%); min-height: 360px;">
+
+    <div class="relative z-10 px-8 sm:px-12 md:px-16 py-12 md:py-16 max-w-[520px]">
+      <h1 class="text-[30px] sm:text-[38px] md:text-[44px] font-black text-white leading-[1.15] mb-5">
+        Доставка товаров<br/>из Великобритании<br/>в Россию
+      </h1>
+      <p class="text-[14px] text-white/80 leading-relaxed mb-8 max-w-[380px]">
+        Начните экономить до 80% на шопинге. Регистрируйтесь в OkeyPost, чтобы покупать со скидками в UK одежду, обувь, гаджеты известных брендов и безопасно отправлять вещи в Россию.
+      </p>
+      <a href="#" class="inline-flex items-center justify-center px-7 py-3 bg-[#00c896] text-white text-[14px] font-semibold rounded-full hover:bg-[#00b080] transition-colors">
+        Получить адрес в UK
+      </a>
+    </div>
+
+    <div class="absolute right-0 top-0 h-full w-[50%] hidden md:flex items-center justify-center">
+      <img src="./Иллюстрация.svg" alt="" class="h-full max-h-[360px] w-auto object-contain"/>
+    </div>
+  </div>
+</section>  
+<div class="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-lg p-10 font-sans text-slate-900">
+    
+    <h2 class="text-3xl font-bold mb-8 leading-tight">Насколько выгодно<br>покупать?</h2>
+
+    <div class="flex items-center justify-between border-y border-gray-100 py-4 mb-12">
+        <button class="text-gray-300 hover:text-blue-500">←</button>
+        <div class="flex space-x-10">
+            <div class="flex flex-col items-center group cursor-pointer">
+                <img src="./Иконка.svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-500 border-b-2 border-blue-500 pb-1">Одежда</span>
+            </div>
+            <div class="flex flex-col items-center opacity-40 hover:opacity-100 cursor-pointer">
+                <img src="./Иконка (1).svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider">Электроника</span>
+            </div>
+            <div class="flex flex-col items-center opacity-40 hover:opacity-100 cursor-pointer">
+                <img src="./Иконка (2).svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider">Аксессуары</span>
+            </div>
+            <div class="flex flex-col items-center opacity-40 hover:opacity-100 cursor-pointer">
+                <img src="./Иконка (3).svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider">Для детей</span>
+            </div>
+            <div class="flex flex-col items-center opacity-40 hover:opacity-100 cursor-pointer">
+                <img src="./Иконка (4).svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider">Для спорта</span>
+            </div>
+            <div class="flex flex-col items-center opacity-40 hover:opacity-100 cursor-pointer">
+                <img src="./Иконка (5).svg" alt="" class="w-8 h-8 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider">Косметика</span>
+            </div>
+        </div>
+        <button class="text-gray-300 hover:text-blue-500">→</button>
+    </div>
+
+    <div class="grid grid-cols-3 items-center gap-6 relative">
+        
+        <div class="space-y-6">
+            <h3 class="text-lg font-bold leading-snug">Columbia Barlow Pass 550<br>Turbodown Jacket</h3>
+            <div class="bg-blue-50/50 rounded-2xl p-4 flex items-center space-x-4 border border-blue-100/50">
+                <img src="./фон.svg" alt="RU" class="w-8 h-auto shadow-sm">
+                <div>
+                    <p class="text-[10px] text-gray-400 font-medium">Цена в России</p>
+                    <p class="font-bold text-blue-600 text-lg">7891,46P</p>
+                </div>
+            </div>
+            <div class="opacity-20 w-12 pt-8">
+                <img src="./Layer 2 1.svg" alt="">
+            </div>
+        </div>
+
+        <div class="relative flex justify-center">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-slate-50 rounded-full -z-10"></div>
+            <img src="./Куртка.svg" alt="Jacket" class="w-full max-w-[280px] drop-shadow-2xl">
+        </div>
+        <div class="space-y-6 text-right">
+            <div class="text-sm font-semibold">
+                Доставка одежды из<br>Великобритании <span class="text-emerald-500 ml-1">от £7.79</span>
+            </div>
+            <div class="bg-blue-50/50 rounded-2xl p-4 flex items-center justify-end space-x-4 border border-blue-100/50">
+                <div class="text-left">
+                    <p class="text-[10px] text-gray-400 font-medium">Цена в UK</p>
+                    <p class="font-bold text-blue-600 text-lg">£80.62</p>
+                </div>
+                <img src="./фон (1).svg" alt="UK" class="w-8 h-auto shadow-sm">
+            </div>
+            <div class="opacity-20 w-12 pt-8 ml-auto">
+                <img src="Layer 3 1.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-[10px] text-gray-400 mb-1">Срок доставки примерно 10 дней</p>
+        <p class="text-xl font-bold">Вы экономите до <span class="text-emerald-500 underline decoration-2 underline-offset-4">$119.56</span></p>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 mt-16 pt-8 border-t border-gray-50">
+        <div class="flex items-center space-x-3">
+            <img src="./Иконка (6).svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-[10px] font-extrabold leading-[1.1] uppercase">Экономия<br>до 70%</span>
+        </div>
+        <div class="flex items-center space-x-3 border-l border-gray-100 pl-4">
+            <img src="./Group 2.svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-[10px] font-extrabold leading-[1.1] uppercase">Только подлинная<br>продукция</span>
+        </div>
+        <div class="flex items-center space-x-3 border-l border-gray-100 pl-4">
+            <img src="./Иконка (7).svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-[10px] font-extrabold leading-[1.1] uppercase">Оперативная<br>доставка</span>
+        </div>
+        <div class="flex items-center space-x-3 border-l border-gray-100 pl-4">
+            <img src="./Иконка (8).svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-[10px] font-extrabold leading-[1.1] uppercase">Огромный<br>выбор товаров</span>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
